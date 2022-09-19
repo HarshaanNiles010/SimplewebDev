@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<div class = "container">
+        <h1>Password generator</h1>
+        <div class = "result-container">
+            <span id = "result"></span>
+        </div>
+        <div class = "settings">
+
+            <div class = "setting">
+
+                <label>Password Length</label>
+                <input type = "number" id = "length" min = "1" max = "64" value="10">
+                
+                <label>Include Upper Case</label>
+                <input type = "checkbox" id = "upperCase">
+
+                <label>Include Lower Case</label>
+                <input type = "checkbox" id = "lowerCase">
+
+                <label>Include Numbers </label>
+                <input type = "checkbox" id = "numberCase">
+
+                <label>Include Special Symbols</label>
+                <input type = "checkbox" id = "specialSymbolCase">
+
+            </div>
+
+        </div>
+        <button class = "btn btn-large" id = "gt">
+            Generate Password
+        </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
